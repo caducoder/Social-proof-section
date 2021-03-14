@@ -18,16 +18,22 @@ body{
    font-family: 'Spartan', sans-serif;
 }
 
+.border1{/*temporário*/
+   border: 1px solid black;
+}
+
 .container{
    width: 1440px;
    height: 800px;
    margin: 0 auto;
    padding: 150px;
-   border: 1px solid black;/*tirar depois*/
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .main-text{
-   border: 1px solid black;
    width: 480px;
 }
 
@@ -46,6 +52,42 @@ body{
    width: 330px;
 }
 
+.stars{
+   padding: 20px;
+   border-radius: 7px;
+   background-color: #eee;
+   width: 450px;
+   color: var(--darkmagenta);
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+
+.stars::before{
+   content: url(images/icon-star.svg) " " url(images/icon-star.svg) " " url(images/icon-star.svg) " " url(images/icon-star.svg) " " url(images/icon-star.svg);
+   margin-right: 30px;   
+}
+
+.comments-box{
+   background-color: var(--darkmagenta);
+   width: 350px;
+   padding: 40px;
+   border-radius: 10px;
+   display: inline-block;
+   color: var(--lightgraymagenta);
+}
+
+.photo{
+   width: 50px;
+   border-radius: 50%;
+}
+
+.name{
+   font-weight: 700;
+}
+
+.selo{
+   color: var(--softpink);
+}
 
 .attribution {
    font-size: 11px;
