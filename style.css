@@ -51,12 +51,17 @@ body{
    width: 330px;
 }
 
+/*temp*/
+.border1{
+   border: 1px solid black;
+}
+
 .ratings{
    width: 50%;
 }
 
-.stars{
-   padding: 15px 0px 15px 25px;
+.review{
+   padding: 15px;
    border-radius: 7px;
    background-color: var(--lightgraymagenta);
    width: 450px;
@@ -65,17 +70,19 @@ body{
    margin-bottom: 15px;
 }
 
-.stars::before{
-   content: url(images/icon-star.svg) " " url(images/icon-star.svg) " " url(images/icon-star.svg) " " url(images/icon-star.svg) " " url(images/icon-star.svg);
-   margin-right: 30px;
-
+.review img{
+   margin-left: 5px;
 }
 
-.stars.second{
+.review span{
+   margin-left: 30px;
+}
+
+.review.second{
    margin-left: 60px;
 }
 
-.stars.third{
+.review.third{
    margin-left: auto;
 }
 
@@ -139,4 +146,90 @@ body{
 }
 .attribution a {
    color: hsl(228, 45%, 44%);
+}
+
+/*RESPONSIVE*/
+
+@media (max-width:500px){
+   body{
+      font-size: 15px;
+      font-family: 'Spartan', sans-serif;
+      background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+      background-repeat: no-repeat;
+      background-position: top 0px left 0px, bottom 0px right 0px;
+   }
+   .container{
+      width: 100%;
+      height: max-content;
+      padding: 0px 20px;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+   }
+   .main-text{
+      width: 100%;
+   }
+   .main-text .descrip{
+      color: var(--darkgraymagenta);
+      font-weight: 500;
+      width: 100%;
+      margin-top: 30px;
+      line-height: 24px;
+      text-align: center;
+   }
+   .big-title{
+      color: var(--darkmagenta);
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 30px;
+      width: 100%;
+      text-align: center;
+      margin-top: 80px;
+   }
+   .ratings{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      height: 270px;
+      justify-content: space-between;
+      margin-top: 40px;
+   }
+   .review{
+      padding: 20px;
+      border-radius: 7px;
+      background-color: var(--lightgraymagenta);
+      width: 100%;
+      color: var(--darkmagenta);
+      font-weight: 700;
+      text-align: center;
+   }
+   .review span{
+      display: block;
+      margin: 10px 0 0 0;
+   }
+   .review.second{
+      margin-left: 0;
+   }
+   .review.third{
+      margin-left: 0;
+   }
+   .comments{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 70px;
+   }
+   .comments-box{
+      background-color: var(--darkmagenta);
+      width: 100%;
+      height: 250px;
+      padding: 33px;
+      border-radius: 10px;
+      margin-top: 20px;
+      color: var(--lightgraymagenta);
+   }
+   .comments-box.third{
+      margin-top: 20px;
+   }
 }
