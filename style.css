@@ -4,7 +4,7 @@
    --darkmagenta: #502050;
    --softpink: #ee68a4;
    --darkgraymagenta:#937b92;
-   --lightgraymagenta:  #f7f2f7;
+   --lightgraymagenta:#f7f2f7;
 }
 
 *{
@@ -49,11 +49,6 @@ body{
    font-weight: 700;
    font-size: 40px;
    width: 330px;
-}
-
-/*temp*/
-.border1{
-   border: 1px solid black;
 }
 
 .ratings{

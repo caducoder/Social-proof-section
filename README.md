@@ -1,70 +1,75 @@
-# Frontend Mentor - Social proof section
+# Frontend Mentor - Social proof section solution
 
-![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Tabela de conteúdos
 
-Thanks for checking out this front-end coding challenge.
+- [Panorama](#panorama-geral)
+  - [O desafio](#o-desafio)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [Meu processo](#meu-processo)
+  - [Feito com](#feito-com)
+  - [O que eu aprendi](#o-que-eu-aprendi)
+  - [Conteúdos interessantes](#conteúdos-interessantes)
+- [Autor](#autor)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
+## Panorama geral
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### O desafio
 
-## The challenge
+- Construir a página de acordo com o design disponibilizado
 
-Your challenge is to build out this social proof section and get it looking as close to the design as possible.
+### Screenshot
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+![](./images/Screenshot.png)
 
-Your users should be able to:
 
-- View the optimal layout for the section depending on their device's screen size
+### Links
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+- Solution URL: [Solução](https://www.frontendmentor.io/solutions/social-proof-section-with-html-and-css-kC8MLLpJK)
+- Live Site URL: [Site](https://social-proof-section-caducoder.vercel.app/)
 
-## Where to find everything
+## Meu processo
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design to work to. 
+### Feito com
 
-The designs are in JPG static format. This will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. This should help train your eye to perceive differences in spacings and sizes.
+- HTML5 semântico
+- CSS3 
+- Flexbox
 
-If you would like the Sketch file in order to inspect the design in more detail you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+### O que eu aprendi
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+Aprendi a organizar o conteúdo de forma semântica utilizando tags apropriadas. Também melhorei meu entendimento sobre flexbox e responsividade.
 
-There is also a `style-guide.md` file, which contains the information you'll need, such as color palette and fonts.
+```html
+<main class="container">
+      <section class="main-text">
+        <p class="big-title">10,000+ of our users love our products.</p>
+      </section>
+</main>
+```
 
-## Building your project
+```css
+@media (max-width:500px){
+   .container{
+      width: 100%;
+      height: max-content;
+      padding: 0px 20px;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+   }
+}
+```
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### Conteúdos Interessantes
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). This will make it easier to share your code with the community if you need some help. If you're not sure how to do this, [have a read through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a URL. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, but we recommend using [Vercel](https://bit.ly/fem-vercel). We've got more information about deploying your project with Vercel below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes that you could create to make reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- [Flexbox Froggy](https://flexboxfroggy.com/) - Este jogo me ajudou a entender melhor como funciona o flexbox. Gostei bastante e sempre que surgir uma dúvida irei utilizá-lo. Nada melhor do que aprender na prática.
 
-## Deploying your project
+## Autor
 
-As mentioned above, there are a number of ways to host your project for free. We recommend using [Vercel](https://bit.ly/fem-vercel) as it's an amazing service and extremely simple to get set up with. If you'd like to use Vercel, here are some steps to follow to get started:
+- Linkedin - [Carlos Silva](https://www.linkedin.com/in/carlos-edu/)
+- Frontend Mentor - [@Cadulost](https://www.frontendmentor.io/profile/Cadulost)
 
-1. [Sign up to Vercel](https://bit.ly/fem-vercel-signup) and go through the onboarding flow, ensuring your GitHub account is connected by using their [Vercel for GitHub](https://vercel.com/docs/v2/git-integrations/vercel-for-github) integration.
-2. Connect your project to Vercel from the ["Import project" page](https://vercel.com/import), using the "From Git Repository" button and selecting the project you want to deploy.
-3. Once connected, every time you `git push`, Vercel will create a new [deployment](https://vercel.com/docs/v2/platform/deployments) and the deployment URL will be shown on your [Dashboard](https://vercel.com/dashboard). You will also receive an email for each deployment with the URL.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Submit it on the platform so that other users will see your solution on the site. Here's our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) to help you do that.
-2. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack).
-3. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor** including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-
-## Giving feedback
-
-Feedback is always welcome, so if you have any to give on this challenge please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
